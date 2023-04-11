@@ -4,8 +4,23 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Bliss Board for CARE</title>
+        <script type="text/javascript" src="words.js"></script>
     </head>
     <body>
+        <h1>Bliss Board for CARE</h1>
+        <label for="input">Enter a number:</label>
+        <input type="number" id="input" min="0" max="2330" placeholder="Enter a number" oninput="getWord()">
+        <p id="output"></p>
 
+        <script>
+            const data = JSON.parse(words);
+            const input = document.getElementById("input");
+            const output = document.getElementById("output");
+
+            function getWord() {
+                const num = input.value;
+                output.innerText = data["_"+num];
+            }
+        </script>
     </body>
 </html>
