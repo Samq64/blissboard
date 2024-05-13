@@ -1,3 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
+    max-width: 800px;
+    margin: auto;
+    background-color: #eee;
+}
+
+footer, h1, h2 {
     text-align: center;
+}
+
+.content {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+
+.eyes {
+    width: 200px;
+    float: right;
 }
