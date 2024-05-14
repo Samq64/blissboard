@@ -9,15 +9,21 @@
     <body>
         <div class="content">
             <h1>Bliss Board for CARE</h1>
-            <p>
-                <img src="eyes.svg" class="eyes"/>
-                At <a href=https://www.carecentre.org/>CARE</a> physically disabled clients often need to communicate using their eyes to get 4-digit codes that correspond to words. Often those words need to be looked up in a large table. This unofficial site aims to speed up those conversations by providing an easy way to type in those codes and instantly get the words back.
-            </p>
-            <br/>
-            <label for="input">Number:</label>
-            <input type="number" id="input" min="0" max="2330" placeholder="0002" autofocus>
+            <div class="description">
+                <img src="eyes.svg" height="100" class="right"/>
+                <p>
+                    At <a href=https://www.carecentre.org/>CARE</a> physically disabled clients often need to communicate using their eyes to get 4-digit codes that correspond to words. Often those words need to be looked up in a large table. This unofficial site aims to speed up those conversations by providing an easy way to type in those codes and instantly get the words back.
+                </p>
+            </div>
+            <div class="inputDiv">
+                <b><label for="input">Number:</label></b>
+                <input type="number" id="input" min="0" max="2330" placeholder="0002" autofocus>
+            </div>
             <h2 id="output"></h2>
-            <ol id="list"></ol>
+            <fieldset>
+                <legend>History</legend>
+                <ol reversed id="list"></ol>
+            </fieldset>
             <footer>
                 <a href="https://github.com/Samq64/blissboard">Source code</a>
                 | <a href="/legacy">Scratch version</a>

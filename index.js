@@ -10,8 +10,12 @@ async function main() {
         if (word) {
             output.textContent = `Word: ${word}`;
             const el = document.createElement("li");
+            const span = document.createElement("span");
             el.textContent = word;
-            list.appendChild(el);
+            span.className = "right";
+            span.textContent = number;
+            el.appendChild(span);
+            list.insertBefore(el, list.children[0]);
         } else if (number.length === 4) {
             output.textContent = "No word found";
         } else if (number.length > 4) {
