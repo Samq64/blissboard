@@ -8,7 +8,7 @@ async function main() {
         const number = input.value;
         const word = words[number];
         if (word) {
-            output.textContent = `Word: ${word}`;
+            output.textContent = word;
             const el = document.createElement("li");
             const span = document.createElement("span");
             el.textContent = word;
