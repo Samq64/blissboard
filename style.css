@@ -8,6 +8,10 @@ body {
     background-color: #eee;
 }
 
+footer {
+    padding: 8px;
+}
+
 a {
     color: DodgerBlue;
 }
@@ -32,6 +36,10 @@ footer, h1, h2 {
     width: 100%;
     padding: 10px;
     background-color: white;
+}
+
+.history:not(:has(li)) {
+    display: none;
 }
 
 .right {
