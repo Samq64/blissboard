@@ -8,6 +8,22 @@ body {
     background-color: #eee;
 }
 
+a {
+    color: DodgerBlue;
+}
+
+input {
+    border: 1px solid grey;
+    border-radius: 4px;
+    transition: 150ms box-shadow ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: DodgerBlue;
+    box-shadow: 0 0 0 3px rgba(30,144,255, 0.5)
+}
+
 footer, h1, h2 {
     text-align: center;
 }
@@ -32,4 +48,20 @@ footer, h1, h2 {
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #111;
+    }
+
+    .content, input {
+        color: white;
+        background-color: #222;
+    }
+
+    input {
+        border-color: white;
+    }
 }
