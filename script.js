@@ -12,7 +12,7 @@ async function main() {
             const el = document.createElement("li");
             const span = document.createElement("span");
             el.textContent = word;
-            span.className = "right";
+            span.style.float = "right";
             span.textContent = number;
             el.appendChild(span);
             list.insertBefore(el, list.children[0]);
