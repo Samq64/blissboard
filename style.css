@@ -9,7 +9,7 @@ body {
 }
 
 footer {
-  padding: 8px;
+  padding: 0.5em;
 }
 
 a {
@@ -17,6 +17,8 @@ a {
 }
 
 input {
+  width: 5em;
+  font-size: 1em;
   border: 1px solid grey;
   border-radius: 4px;
   transition: 150ms box-shadow ease;
@@ -36,7 +38,7 @@ h2 {
 
 .content {
   width: 100%;
-  padding: 10px;
+  padding: 0.5em 1em;
   background-color: white;
 }
 
@@ -46,11 +48,12 @@ h2 {
 
 .eyes {
   float: right;
-  padding-left: 10px;
+  padding-left: 1em;
+  height: 70px;
 }
 
 .description {
-  min-height: 100px;
+  min-height: calc(70px + 1em);
 }
 
 .inputDiv {
@@ -58,7 +61,7 @@ h2 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 0.5em;
 }
 
 @media (prefers-color-scheme: dark) {
