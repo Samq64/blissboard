@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    max-width: 800px;
+    margin: auto;
+    background-color: #eee;
+}
+
+footer {
+    padding: 8px;
+}
+
+a {
+    color: DodgerBlue;
+}
+
+input {
+    border: 1px solid grey;
+    border-radius: 4px;
+    transition: 150ms box-shadow ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: DodgerBlue;
+    box-shadow: 0 0 0 3px rgba(30,144,255, 0.5)
+}
+
+footer, h1, h2 {
+    text-align: center;
+}
+
+.content {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+
+.history:not(:has(li)) {
+    display: none;
+}
+
+.right {
+    float: right;
+}
+
+.description {
+    min-height: 100px;
+}
+
+.inputDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #111;
+    }
+
+    .content, input {
+        color: white;
+        background-color: #222;
+    }
+
+    input {
+        border-color: white;
+    }
+}
