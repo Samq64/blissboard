@@ -42,8 +42,9 @@ footer, h1, h2 {
     display: none;
 }
 
-.right {
+.eyes {
     float: right;
+    padding-left: 10px;
 }
 
 .description {
