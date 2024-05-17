@@ -1,17 +1,11 @@
-# Bliss Board for CARE
+# Bliss Board for C.A.R.E.
 
-A webpage for [CARE](https://www.carecentre.org/) that converts 4-digit codes to words.
+The unofficial GitHub pages site for C.A.R.E. to speed up bliss board conversations.
 
 ## Setup
 
-Simply clone the repository and start an HTTP server.
-
-```bash
-git clone https://github.com/samq64/blissboard
-cd blissboard
-python -m http.server
-```
+The site loads a JSON file using `fetch()`, so it needs to be run with an HTTP server. If Python is installed it can be done by running `python3 -m http.server`.
 
 ## Scratch version
 
-The Scratch version is still available in the `scratch` directory but it will not load in the official editor since it relies on SheepTester's utilities extension. The project is packaged using the [TurboWarp Packager](https://packager.turbowarp.org/).
+The Scratch version is still available in the `scratch` directory. It won't load in the offical editor but can be opened in TurboWarp [here](https://turbowarp.org/?project_url=samq64.github.io/blissboard/scratch/BlissBoard.sb3&size=216x360). The project is packaged using the [TurboWarp Packager](https://packager.turbowarp.org/).
