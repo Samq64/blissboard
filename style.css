@@ -9,7 +9,7 @@ body {
 }
 
 footer {
-  padding: 0.5em;
+  padding: 0.5rem;
 }
 
 a {
@@ -20,7 +20,6 @@ input {
   width: 5em;
   font-size: 1em;
   border: 1px solid grey;
-  border-radius: 4px;
   transition: 150ms box-shadow ease;
 }
 
@@ -38,8 +37,16 @@ h2 {
 
 .content {
   width: 100%;
-  padding: 0.5em 1em;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
   background-color: white;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+input,
+.content,
+.history {
+  border-radius: 4px;
 }
 
 .history:not(:has(li)) {
@@ -58,10 +65,15 @@ h2 {
 
 .inputDiv {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0.5em;
+}
+
+@media (max-width: 800px) {
+  .content {
+    margin: 0;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
