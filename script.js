@@ -16,6 +16,7 @@ async function main() {
       span.textContent = number;
       el.appendChild(span);
       list.insertBefore(el, list.children[0]);
+      document.getElementById("history").style.display = "block";
     } else if (number.length === 4) {
       output.textContent = "No word found";
     } else if (number.length > 4) {
