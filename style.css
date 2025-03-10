@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-weight: normal;
+}
+
 body {
   max-width: 800px;
   margin: auto;
@@ -20,7 +24,6 @@ a {
 input {
   width: 5em;
   font-size: 1em;
-  border: 1px solid grey;
   transition: 150ms box-shadow ease;
 }
 
@@ -28,6 +31,11 @@ input:focus {
   outline: none;
   border-color: DodgerBlue;
   box-shadow: 0 0 0 3px rgba(30, 144, 255, 0.5);
+}
+
+input,
+fieldset {
+  border: 1px solid grey;
 }
 
 footer,
@@ -46,7 +54,7 @@ h2 {
 
 input,
 .content,
-.history {
+#history {
   border-radius: 4px;
 }
 
@@ -71,6 +79,10 @@ input,
   gap: 0.5em;
 }
 
+#list > li > span {
+    float: right;
+}
+
 @media (max-width: 800px) {
   .content {
     margin: 0;
@@ -79,6 +91,7 @@ input,
 
 @media (prefers-color-scheme: dark) {
   body {
+    color-scheme: dark;
     background-color: #111;
   }
 
@@ -88,7 +101,8 @@ input,
     background-color: #222;
   }
 
-  input {
-    border-color: white;
+  input,
+  fieldset {
+    border-color: #aaa;
   }
 }
