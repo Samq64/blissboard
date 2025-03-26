@@ -4,7 +4,7 @@ The unofficial GitHub pages site for C.A.R.E. to speed up bliss board conversati
 
 ## Setup
 
-The site loads a JSON file using `fetch()`, so it needs to be run with an HTTP server. If Python is installed it can be done by running `python3 -m http.server`.
+After cloning, simply start a localhost server. If Python is installed this can be done by running `python -m http.server`.
 
 ## Scratch version
 
