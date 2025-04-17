@@ -40,7 +40,7 @@ fieldset {
 
 footer,
 h1,
-h2 {
+.outputDiv {
   text-align: center;
 }
 
@@ -48,8 +48,35 @@ h2 {
   width: 100%;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background-color: white;
+  background-color: #f4f4f4;
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bubble {
+  position: relative;
+  width: fit-content;
+  margin-left: 50%;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.bubble:before {
+  /* Based on https://codepen.io/run-time/pen/VNRBJd */
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 12px solid #fff;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+  border-bottom: 10px solid transparent;
+  left: 16px;
+  bottom: -12px;
+}
+
+.character {
+    height: 200px;
 }
 
 input,
@@ -69,7 +96,7 @@ input,
 }
 
 .description {
-  min-height: calc(70px + 1em);
+  min-height: 70px;
 }
 
 .inputDiv {
@@ -77,10 +104,11 @@ input,
   justify-content: center;
   align-items: center;
   gap: 0.5em;
+  margin: 1rem;
 }
 
 #list > li > span {
-    float: right;
+  float: right;
 }
 
 @media (max-width: 800px) {
@@ -104,5 +132,13 @@ input,
   input,
   fieldset {
     border-color: #aaa;
+  }
+
+  .bubble {
+    background-color: #333;
+  }
+  .bubble:before {
+    border-top-color: #333;
+    border-left-color: #333;
   }
 }
