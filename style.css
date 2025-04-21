@@ -40,7 +40,7 @@ fieldset {
 
 footer,
 h1,
-h2 {
+.outputDiv {
   text-align: center;
 }
 
@@ -48,8 +48,36 @@ h2 {
   width: 100%;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background-color: white;
+  background-color: #d0f6fe;
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bubble {
+  position: relative;
+  width: fit-content;
+  margin-left: 50%;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bubble:before {
+  /* Based on https://codepen.io/run-time/pen/VNRBJd */
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 12px solid #fff;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+  border-bottom: 10px solid transparent;
+  left: 16px;
+  bottom: -12px;
+}
+
+.character {
+  height: 150px;
 }
 
 input,
@@ -60,16 +88,23 @@ input,
 
 #history {
   display: none;
+  overflow: auto;
+  resize: vertical;
+  height: 8rem;
 }
 
 .eyes {
-  float: right;
-  padding-left: 1em;
-  height: 70px;
+  height: 4rem;
 }
 
 .description {
-  min-height: calc(70px + 1em);
+  display: flex;
+  gap: 1rem;
+}
+
+.desc-text {
+  flex-grow: 1;
+  margin: 0;
 }
 
 .inputDiv {
@@ -77,10 +112,16 @@ input,
   justify-content: center;
   align-items: center;
   gap: 0.5em;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#list {
+  margin: 0.25rem;
 }
 
 #list > li > span {
-    float: right;
+  float: right;
 }
 
 @media (max-width: 800px) {
@@ -95,14 +136,22 @@ input,
     background-color: #111;
   }
 
-  .content,
-  input {
+  .content {
     color: white;
-    background-color: #222;
+    background-color: #080b1a;
   }
 
   input,
   fieldset {
     border-color: #aaa;
+  }
+
+  .bubble,
+  input {
+    background-color: #222;
+  }
+  .bubble:before {
+    border-top-color: #222;
+    border-left-color: #222;
   }
 }

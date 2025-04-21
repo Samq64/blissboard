@@ -10,6 +10,10 @@
     <div class="content">
       <h1>Bliss Board for C.A.R.E.</h1>
       <div class="description">
+        <p class="desc-text">
+          This is the unofficial site for C.A.R.E. to speed up bliss board
+          conversations.
+        </p>
         <picture>
           <source
             media="(prefers-color-scheme: dark)"
@@ -21,10 +25,6 @@
             class="eyes"
           />
         </picture>
-        <p>
-          This is the unofficial site for C.A.R.E. to speed up bliss board
-          conversations. Type the code and see the corresponding words.
-        </p>
       </div>
       <div class="inputDiv">
         <b><label for="input">Number:</label></b>
@@ -37,15 +37,25 @@
           autofocus
         />
       </div>
-      <h2 id="output"><noscript>Please enable JavaScript</noscript></h2>
+      <div class="outputDiv">
+        <div class="bubble" id="output">
+          <noscript>Please enable JavaScript.</noscript>
+        </div>
+        <img src="images/character.svg" class="character" />
+      </div>
       <fieldset id="history">
         <legend>History</legend>
-        <ol reversed id="list"></ol>
+        <ol id="list"></ol>
       </fieldset>
       <footer>
         <a href="https://samq64.github.io">Home</a>
         | <a href="./scratch">Scratch version</a> |
         <a href="https://github.com/Samq64/blissboard">Source code</a>
+        <br />
+        <small
+          >The character is from <a href="https://scratch.mit.edu">Scratch</a>'s
+          asset library.</small
+        >
       </footer>
     </div>
     <script type="module" src="script.js"></script>
