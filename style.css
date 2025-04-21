@@ -48,7 +48,7 @@ h1,
   width: 100%;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
-  background-color: #f6f6f6;
+  background-color: #d0f6fe;
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -136,10 +136,9 @@ input,
     background-color: #111;
   }
 
-  .content,
-  input {
+  .content {
     color: white;
-    background-color: #222;
+    background-color: #080b1a;
   }
 
   input,
@@ -147,11 +146,12 @@ input,
     border-color: #aaa;
   }
 
-  .bubble {
-    background-color: #333;
+  .bubble,
+  input {
+    background-color: #222;
   }
   .bubble:before {
-    border-top-color: #333;
-    border-left-color: #333;
+    border-top-color: #222;
+    border-left-color: #222;
   }
 }
