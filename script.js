@@ -16,8 +16,9 @@ input.addEventListener("input", () => {
     span.textContent = number;
     el.appendChild(span);
     document.getElementById("list").append(el);
-    el.scrollIntoView({ behavior: "smooth"});
-    document.getElementById("history").style.display = "block";
+    const history = document.getElementById("history");
+    history.scrollTop = list.scrollHeight;
+    history.style.display = "block";
   } else if (number.length === 4) {
     output.textContent = "I couldn't find that word.";
   } else if (number.length > 4) {
