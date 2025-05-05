@@ -11,6 +11,7 @@ body {
   margin: auto;
   background-color: #eee;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 footer {
@@ -36,12 +37,7 @@ input:focus {
 input,
 fieldset {
   border: 1px solid grey;
-}
-
-footer,
-h1,
-.outputDiv {
-  text-align: center;
+  border-radius: 4px;
 }
 
 .content {
@@ -50,6 +46,7 @@ h1,
   padding: 0.5rem 1rem;
   background-color: #d0f6fe;
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
 }
 
 .bubble {
@@ -62,7 +59,7 @@ h1,
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
-.bubble:before {
+.bubble::before {
   /* Based on https://codepen.io/run-time/pen/VNRBJd */
   content: "";
   width: 0px;
@@ -76,25 +73,12 @@ h1,
   bottom: -12px;
 }
 
-.character {
-  height: 150px;
-}
-
-input,
-.content,
-#history {
-  border-radius: 4px;
-}
-
 #history {
   display: none;
+  text-align: left;
   overflow: auto;
   resize: vertical;
   height: 8rem;
-}
-
-.eyes {
-  height: 4rem;
 }
 
 .description {
@@ -146,11 +130,11 @@ input,
     border-color: #aaa;
   }
 
-  .bubble,
-  input {
+  input,
+  .bubble {
     background-color: #222;
   }
-  .bubble:before {
+  .bubble::before {
     border-top-color: #222;
     border-left-color: #222;
   }

@@ -23,27 +23,31 @@
           <img
             src="images/eyes.svg"
             alt="Eyes surrounded by the digits 0-8."
-            class="eyes"
+            height="64"
           />
         </picture>
       </div>
+      <noscript>Please enable JavaScript.</noscript>
       <div class="inputDiv">
         <b><label for="input">Number:</label></b>
         <input
           type="number"
-          id="input"
+          id="numBox"
           min="0"
           max="2330"
           placeholder="0002"
+          autocomplete="off"
           autofocus
         />
       </div>
-      <div class="outputDiv">
-        <div class="bubble" id="output">
-          <noscript>Please enable JavaScript.</noscript>
-        </div>
-        <img src="images/character.svg" class="character" />
+      <div class="bubble" id="output">
+        Type a code to see the corresponding word.
       </div>
+      <img
+        src="images/character.svg"
+        alt="Person in a wheelchair"
+        height="150"
+      />
       <fieldset id="history">
         <legend>History</legend>
         <ol id="list"></ol>
