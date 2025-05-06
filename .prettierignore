@@ -1,1 +1,4 @@
 scratch/
+
+# To prevent converting string keys to numbers
+words.js
