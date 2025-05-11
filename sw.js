@@ -5,8 +5,8 @@ const assets = [
   "script.js",
   "words.js",
   "images/eyes.svg",
-  "images/eyes-dark.svg",
   "images/character.svg",
+  "images/icon.png",
 ];
 
 self.addEventListener("install", (e) => {
