@@ -26,6 +26,11 @@ h1 {
   font-weight: normal;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 body {
   max-width: 800px;
   margin: auto;
@@ -33,6 +38,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   color: var(--text);
+  display: flex;
+  flex-direction: column;
 }
 
 footer {
@@ -64,12 +71,14 @@ fieldset {
 }
 
 .content {
-  width: 100%;
-  margin-top: 1rem;
+  margin: 1rem 0;
   padding: 0.5rem 1rem;
   background-color: var(--content-bg);
   box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .bubble {
@@ -100,8 +109,6 @@ fieldset {
   display: none;
   text-align: left;
   overflow: auto;
-  resize: vertical;
-  height: 8rem;
 }
 
 .description {
@@ -136,4 +143,9 @@ fieldset {
     margin: 0;
   }
 }
+
+@media (max-height: 560px) {
+  #history {
+    display: none !important;
+  }
 
